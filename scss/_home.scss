@@ -1,0 +1,92 @@
+/*HOME*/
+.carousel-inner{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+/*ABOUT*/
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+
+    &__acerca{
+        padding: 1rem;
+    }
+
+    &__titulo{
+        font-family: $mainFont;
+        font-size: 30px;
+        text-align: center;
+        color: $secondColor;
+    }
+
+    & p{
+        font-size: 20px;
+        color:$secondColor ;
+        margin-top: 20px;
+        padding: 10px;
+        text-align: justify;
+        font-family: $secondColor
+    }
+
+    &__illus{
+        max-width: 40%;
+        align-self: center;
+    }
+}
+
+.contentDos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+
+    &__acerca{
+        padding: 1rem;
+    }
+
+    & p{
+        font-size: 20px;
+        color:$secondColor ;
+        margin-top: 20px;
+        padding: 10px;
+        text-align: justify;
+        font-family: $secondColor
+    }
+    
+    &__illus{
+        max-width: 40%;
+        align-self: center;
+    }
+}
+
+.contentTres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+
+    &__acerca{
+        padding: 1rem;
+    }
+
+    & p{
+        font-size: 20px;
+        color:$secondColor ;
+        margin-top: 20px;
+        padding: 10px;
+        text-align: justify;
+        font-family: $secondColor
+    }
+
+    &__illus{
+        max-width: 40%;
+        align-self: center;
+    }
+}

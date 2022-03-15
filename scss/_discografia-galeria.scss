@@ -1,0 +1,35 @@
+/*DISCOGRAFIA*/
+.discografia__titulo{
+    font-family: $mainFont;
+    font-size: 40px;
+    text-align: center;
+    color: $secondColor;
+    margin-top: 2rem;
+}
+.tituloDiscografia1{
+    font-family: $mainFont;
+    font-size: 25px;
+    color: $secondColor;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+/*GALERIA*/
+.tituloGaleria{
+    font-family: $mainFont;
+    font-size: 40px;
+    text-align: center;
+    color: $secondColor;
+    margin-top: 2rem;
+}
+.videoUno p{
+    font-family: $mainFont;
+    font-size: 25px;
+    color: $secondColor;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+.imgUno{
+    margin-bottom: 2rem;
+}
