@@ -15,6 +15,15 @@
     margin-left: 1rem;
 }
 
+.row p{
+    font-size: 10px;
+    color:$secondColor ;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: justify;
+    font-family: $secondFont
+}
+
 /*GALERIA*/
 .tituloGaleria{
     font-family: $mainFont;
