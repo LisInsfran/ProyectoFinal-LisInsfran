@@ -8,11 +8,20 @@
 }
 .tituloDiscografia1{
     font-family: $mainFont;
+    text-align: center;
     font-size: 25px;
     color: $secondColor;
     text-align: center;
     margin-top: 1rem;
     margin-left: 1rem;
+}
+.textoDiscografia p{
+    font-size: 20px;
+    color:$secondColor ;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: justify;
+    font-family: $secondFont;
 }
 
 .row p{
@@ -39,6 +48,7 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-left: 1rem;
+    text-align: center;
 }
 .imgUno{
     margin-bottom: 2rem;

@@ -4,10 +4,15 @@
 .carousel-inner {
   display: flex;
   align-items: center;
-  width: fit-content;
+  width: 100vw;
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 1rem; }
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  position: relative; }
 
 /*MIXIN*/
 /*ABOUT*/
@@ -35,12 +40,15 @@
     align-self: center; }
 
 /*TOUR*/
-.tituloTour {
+.tour__titulo {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
   text-align: center;
   color: #545051;
   margin-top: 2rem; }
+
+.tour__img {
+  width: 100vw; }
 
 .table {
   font-family: "Montserrat", sans-serif;
@@ -58,11 +66,28 @@
 
 .tituloDiscografia1 {
   font-family: "Montserrat", sans-serif;
+  text-align: center;
   font-size: 25px;
   color: #545051;
   text-align: center;
   margin-top: 1rem;
   margin-left: 1rem; }
+
+.textoDiscografia p {
+  font-size: 20px;
+  color: #545051;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: justify;
+  font-family: "Raleway", sans-serif; }
+
+.row p {
+  font-size: 10px;
+  color: #545051;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: justify;
+  font-family: "Raleway", sans-serif; }
 
 /*GALERIA*/
 .tituloGaleria {
@@ -78,7 +103,8 @@
   color: #545051;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  margin-left: 1rem; }
+  margin-left: 1rem;
+  text-align: center; }
 
 .imgUno {
   margin-bottom: 2rem; }
@@ -102,7 +128,46 @@
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   align-items: center;
+  align-content: center;
   margin-bottom: 2rem; }
+
+.contacto__img {
+  width: 100vw; }
+
+.shop__titulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: #545051;
+  margin-top: 2rem; }
+
+.shop__texto {
+  font-size: 15px;
+  color: #545051;
+  text-align: center;
+  font-family: "Raleway", sans-serif; }
+
+.shop__icon {
+  font-size: 20px;
+  color: #545051; }
+
+.card {
+  margin-bottom: 2rem; }
+
+.card-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #545051;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center; }
+
+.card-text {
+  font-size: 20px;
+  color: #545051;
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Raleway", sans-serif; }
 
 * {
   margin: 0%;
@@ -126,6 +191,10 @@ h1 {
   text-align: center;
   font-family: "Montserrat", sans-serif; }
 
+.conteiner-fluid {
+  display: flex;
+  flex-direction: column; }
+
 nav {
   background-color: #a8a8ff; }
 
@@ -142,6 +211,10 @@ nav {
   font-size: 20px;
   color: white;
   font-family: "Montserrat", sans-serif; }
+
+ul {
+  padding-top: 1rem;
+  text-align: center; }
 
 a {
   text-decoration: none;
@@ -170,16 +243,13 @@ a {
 
 /*MEDIA Q*/
 @media screen and (max-width: 600px) {
-  .titulo {
-    background-color: #a8a8ff;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style-type: none;
-    font-size: 45px;
+  .navbar-dark .navbar-toggler {
     color: white;
-    text-align: center;
+    border-color: white; }
+  .nav-item {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
     font-family: "Montserrat", sans-serif; }
   ul {
     display: flex;
@@ -193,20 +263,20 @@ a {
     display: flex;
     justify-content: center;
     align-items: center; }
-  .content-acerca {
+  .content__acerca {
     padding: 1rem; }
-  .content-acerca h2 {
+  .content__titulo {
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
     text-align: center;
     color: #545051; }
-  .content-acerca p {
+  .content p, .contentDos p, .contentTres p {
     font-size: 20px;
     color: #545051;
     padding: 10px;
     text-align: justify;
     font-family: #545051; }
-  .illus-acerca {
+  .content__illus {
     max-width: 100%;
     align-self: center;
     padding: 1fr; }
@@ -215,15 +285,15 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-  .content-acercaDos {
+  .contentDos__acerca {
     padding: 1rem; }
-  .content-acercaDos p {
+  .contentDos p {
     font-size: 20px;
     color: #545051;
     padding: 10px;
     text-align: justify;
     font-family: #545051; }
-  .illus-acercaDos {
+  .contentDos__illus {
     max-width: 100%;
     align-self: center;
     padding: 1fr; }
@@ -232,43 +302,51 @@ a {
     display: flex;
     justify-content: center;
     align-items: center; }
-  .content-acercaTres {
+  .contentTres__acerca {
     padding: 1rem; }
-  .content-acercaTres p {
+  .contentTres p {
     font-size: 20px;
     color: #545051;
     margin-top: 20px;
     padding: 10px;
     text-align: justify;
     font-family: #545051; }
-  .illus-acercaTres {
+  .contentTres__illus {
     max-width: 100%;
     align-self: center;
-    padding: 1fr; } }
-
-.redes-web i {
-  font-size: 25px;
-  color: white; }
-
-.redes-web p {
-  list-style-type: none;
-  font-size: 10px;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  padding-top: 15px;
-  text-align: center;
-  padding-bottom: 10px; }
-
-/*GALERIA*/
-.vidUno {
-  max-width: 100%;
-  align-self: center;
-  padding: 1fr; }
-
-.vidDos {
-  max-width: 100%;
-  align-self: center;
-  padding: 1fr; }
-
-.table {
-  max-width: 100%; }
+    padding: 1fr; }
+  .redes-web i {
+    font-size: 25px;
+    color: white; }
+  .redes-web p {
+    list-style-type: none;
+    font-size: 10px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 10px; }
+  /*GALERIA*/
+  .vidUno {
+    max-width: 100%;
+    align-self: center;
+    padding: 1fr; }
+  .vidDos {
+    max-width: 100%;
+    align-self: center;
+    padding: 1fr; }
+  .table {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    text-align: center;
+    color: #545051; }
+  .tituloShop {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #545051;
+    margin-top: 2rem;
+    padding-bottom: 2rem; }
+  .shop {
+    max-width: 100%;
+    margin-left: 0.1rem; } }

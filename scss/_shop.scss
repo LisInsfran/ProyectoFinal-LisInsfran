@@ -1,0 +1,37 @@
+.shop__titulo{
+    font-family: $mainFont;
+    font-size: 40px;
+    text-align: center;
+    color: $secondColor;
+    margin-top: 2rem;
+}
+.shop__texto{
+    font-size: 15px;
+    color: $secondColor;
+    text-align: center;
+    font-family: $secondFont;
+}
+.shop__icon{
+    font-size: 20px;
+    color: $secondColor;
+}
+
+.card{
+    margin-bottom: 2rem;
+}
+
+.card-title{
+    font-family: $mainFont;
+    font-size: 20px;
+    color: $secondColor;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.card-text{
+    font-size: 20px;
+    color:$secondColor ;
+    margin-top: 20px;
+    text-align: center;
+    font-family: $secondFont;
+}
