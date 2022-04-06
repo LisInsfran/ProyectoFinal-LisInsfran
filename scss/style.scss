@@ -112,7 +112,8 @@ a{
         flex-direction: column;
         display: flex;
         justify-content: center;
-        align-items: center;   
+        align-items: center;  
+        margin: 0.2rem; 
     }
     
     .content__acerca{
@@ -143,6 +144,7 @@ a{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin: 0.2rem; 
     }
     .contentDos__acerca{
         padding: 1rem;
@@ -164,6 +166,7 @@ a{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0.2rem; 
     }
     .contentTres__acerca{
         padding: 1rem;

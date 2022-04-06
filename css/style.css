@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   width: 100vw;
+  height: calc(100vh - 80px);
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 1rem; }
@@ -48,7 +49,8 @@
   margin-top: 2rem; }
 
 .tour__img {
-  width: 100vw; }
+  width: 100vw;
+  height: calc(100vh - 80px); }
 
 .table {
   font-family: "Montserrat", sans-serif;
@@ -262,7 +264,8 @@ a {
     flex-direction: column;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin: 0.2rem; }
   .content__acerca {
     padding: 1rem; }
   .content__titulo {
@@ -284,7 +287,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    margin: 0.2rem; }
   .contentDos__acerca {
     padding: 1rem; }
   .contentDos p {
@@ -301,7 +305,8 @@ a {
     flex-direction: column;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin: 0.2rem; }
   .contentTres__acerca {
     padding: 1rem; }
   .contentTres p {
